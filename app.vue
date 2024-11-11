@@ -1,5 +1,6 @@
 <template>
   <div>
-    <AtomsButton />
+    <OrganismsHeader />
+    <NuxtPage />
   </div>
 </template>
