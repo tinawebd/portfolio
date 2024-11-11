@@ -2,21 +2,26 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@primevue/nuxt-module', '@nuxtjs/storybook'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@primevue/nuxt-module',
+    '@nuxtjs/storybook',
+  ],
   css: ['@/assets/css/tailwind.css', '@/assets/css/base.css'],
+
   primevue: {
     components: {
       prefix: 'Prime',
     },
     options: {
-      theme: 'none'
-    }
+      theme: 'none',
+    },
   },
   postcss: {
     plugins: {
       'postcss-import': {},
       tailwindcss: {},
-      autoprefixer: {}
-    }
-  }
+      autoprefixer: {},
+    },
+  },
 })
