@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@primevue/nuxt-module',
     '@nuxtjs/storybook',
+    '@nuxt/eslint',
   ],
   css: ['@/assets/css/tailwind.css', '@/assets/css/base.css'],
 

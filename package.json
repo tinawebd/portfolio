@@ -9,9 +9,12 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "storybook": "storybook dev --port 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.6.1",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "3.11.2",
     "primevue": "^4.2.1",
@@ -20,18 +23,19 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@primevue/nuxt-module": "^4.2.1",
-    "postcss-import": "^16.1.0",
-    "storybook": "^8.0.8",
-    "@types/node": "^18.17.5",
-    "@storybook/vue3": "^8.0.8",
-    "@storybook-vue/nuxt": "0.2.6",
     "@nuxtjs/storybook": "^8.3.2",
-    "@storybook/addon-links": "^8.0.8",
-    "@storybook/builder-vite": "^8.0.8",
+    "@primevue/nuxt-module": "^4.2.1",
+    "@storybook-vue/nuxt": "0.2.6",
     "@storybook/addon-essentials": "^8.0.8",
     "@storybook/addon-interactions": "^8.0.8",
+    "@storybook/addon-links": "^8.0.8",
+    "@storybook/blocks": "^8.0.8",
+    "@storybook/builder-vite": "^8.0.8",
     "@storybook/test": "^8.0.8",
-    "@storybook/blocks": "^8.0.8"
+    "@storybook/vue3": "^8.0.8",
+    "@types/node": "^18.17.5",
+    "postcss-import": "^16.1.0",
+    "storybook": "^8.0.8",
+    "typescript": "^5.6.3"
   }
 }
