@@ -1,8 +1,55 @@
+/* Josefin Sans */
 @font-face {
-  font-family: 'Josefin Sans Regular';
+  font-family: 'Josefin Sans';
+  src: url('/fonts/JosefinSans/JosefinSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Josefin Sans';
   src: url('/fonts/JosefinSans/JosefinSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/fonts/JosefinSans/JosefinSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/fonts/JosefinSans/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/fonts/JosefinSans/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* Funnel Display */
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay/FunnelDisplay-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay/FunnelDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay/FunnelDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay/FunnelDisplay-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Funnel Display';
+  src: url('/fonts/FunnelDisplay/FunnelDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
 }
 
 /* Primary and Surface Palettes */

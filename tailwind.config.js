@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const primeui = require('tailwindcss-primeui')
+const primeui = require('tailwindcss-primeui');
 
 export default {
   content: [
@@ -15,8 +15,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'josefin-sans-regular': ['Josefin Sans Regular', 'sans-serif'],
+        'josefin-sans': ['Josefin Sans', 'sans-serif'],
+        'funnel-display': ['Funnel Display', 'sans-serif'],
       },
     },
   },
-}
+};

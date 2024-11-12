@@ -5,6 +5,6 @@
 
 @layer base {
   html {
-    @apply font-josefin-sans-regular;
+    @apply font-josefin-sans;
   }
 }
