@@ -1,7 +1,6 @@
-<script setup>
-</script>
+<script setup></script>
 <template>
-    <div>
-        <h1>Hello Index</h1>
-    </div>
+  <div>
+    <h1 class="font-funnel-display">Hello Index</h1>
+  </div>
 </template>

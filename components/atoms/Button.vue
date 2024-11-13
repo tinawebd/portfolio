@@ -1,5 +1,4 @@
 <template>
-    <PrimeButton label="Submit" />
+  <PrimeButton label="Submit" />
 </template>
-<script setup>
-</script>
+<script setup></script>
