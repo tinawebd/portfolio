@@ -25,4 +25,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-})
+  vite: {
+    server: {
+      hmr: {
+        clientPort: 3000,
+      },
+    },
+  },
+});
