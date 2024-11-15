@@ -10,20 +10,14 @@
     </template>
     <template #end>
       <div class="flex items-center gap-2">
-        <PrimeAvatar
-          image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
-          shape="circle"
-        />
-        <PrimeAvatar
-          image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png"
-          shape="circle"
-        />
+        <MoleculesMenuEnd />
       </div>
     </template>
   </PrimeMenubar>
 </template>
 
 <script setup>
+import { MoleculesMenuEnd } from '#components'
 import { ref } from 'vue'
 
 const items = ref([
