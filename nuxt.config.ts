@@ -5,7 +5,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@primevue/nuxt-module',
-    '@nuxtjs/storybook',
     '@nuxt/eslint',
   ],
   css: ['@/assets/css/tailwind.css', '@/assets/css/base.css'],
@@ -23,13 +22,6 @@ export default defineNuxtConfig({
       'postcss-import': {},
       tailwindcss: {},
       autoprefixer: {},
-    },
-  },
-  vite: {
-    server: {
-      hmr: {
-        clientPort: 3000,
-      },
     },
   },
 });
