@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply font-josefin-sans;
+    @apply font-josefin-sans font-normal;
   }
   h1 {
     @apply text-6xl font-bold;
