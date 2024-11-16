@@ -20,7 +20,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  eslint: {
-    checker: true, // <---
+  typescript: {
+    typeCheck: true,
   },
 })
