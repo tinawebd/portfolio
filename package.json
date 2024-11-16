@@ -25,6 +25,7 @@
   "devDependencies": {
     "@primevue/nuxt-module": "^4.2.2",
     "@types/node": "^18.19.64",
+    "eslint": "^9.15.0",
     "postcss-import": "^16.1.0",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
