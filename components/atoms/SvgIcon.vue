@@ -3,6 +3,7 @@
 </template>
 
 <script setup lang="ts">
+// @ts-ignore
 import SvgIcon from '@jamescoyle/vue-icon'
 
 defineProps<{
