@@ -1,17 +1,13 @@
 <template>
-  <PrimeCard class="w-96 overflow-hidden" :pt="{ header: 'p-5 pb-0' }">
+  <PrimeCard class="group w-96 overflow-hidden" :pt="{ header: 'p-5 pb-0' }">
     <template #header>
-      <MoleculesServicesItemIcon />
+      <MoleculesServicesItemIcon :icon="icon" />
     </template>
-    <template #title
-      ><AtomsTypographyTitle tag="h4">{{
-        title
-      }}</AtomsTypographyTitle></template
-    >
+    <template #title>
+      <h4>{{ title }}</h4>
+    </template>
     <template #content>
-      <AtomsTypographyParagraphe>
-        {{ description }}
-      </AtomsTypographyParagraphe>
+      <p>{{ description }}</p>
     </template>
   </PrimeCard>
 </template>
