@@ -1,5 +1,5 @@
 <template>
-  <PrimeMenubar :model="items">
+  <PrimeMenubar :model="items" class="mx-auto max-w-screen-xl px-14">
     <template #start>
       <NuxtLink to="/">
         <span class="text-2xl font-bold text-primary">Logo</span>
@@ -17,8 +17,8 @@
 </template>
 
 <script setup>
-import { MoleculesMenuEnd } from '#components'
-import { ref } from 'vue'
+import { MoleculesMenuEnd } from '#components';
+import { ref } from 'vue';
 
 const items = ref([
   {
@@ -36,5 +36,5 @@ const items = ref([
     icon: 'pi pi-envelope',
     route: '/contact',
   },
-])
+]);
 </script>

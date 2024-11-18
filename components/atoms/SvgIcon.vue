@@ -4,9 +4,9 @@
 
 <script setup lang="ts">
 // @ts-expect-error: SvgIcon is not a module
-import SvgIcon from '@jamescoyle/vue-icon'
+import SvgIcon from '@jamescoyle/vue-icon';
 
 defineProps<{
-  path: string
-}>()
+  path: string;
+}>();
 </script>

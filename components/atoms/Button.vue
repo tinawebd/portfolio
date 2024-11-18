@@ -10,12 +10,12 @@ export type Severity =
   | 'warn'
   | 'help'
   | 'danger'
-  | 'contrast'
+  | 'contrast';
 interface Props {
-  label: string
-  severity?: Severity
+  label: string;
+  severity?: Severity;
 }
 withDefaults(defineProps<Props>(), {
   severity: 'primary',
-})
+});
 </script>
