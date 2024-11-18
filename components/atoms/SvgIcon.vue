@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-// @ts-ignore
+// @ts-expect-error: SvgIcon is not a module
 import SvgIcon from '@jamescoyle/vue-icon'
 
 defineProps<{
