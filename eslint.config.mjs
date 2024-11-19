@@ -12,5 +12,17 @@ export default withNuxt({
         allowTaggedTemplates: false,
       },
     ],
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+          normal: 'never',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      },
+    ],
   },
 });
