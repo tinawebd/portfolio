@@ -1,30 +1,22 @@
 <template>
-  <PrimeCard class="group w-96 overflow-hidden" :pt="{ header: 'p-5 pb-0' }">
+  <AtomsBasecard class="group w-96" pt:header:class="p-4">
     <template #header>
       <MoleculesServicesItemIcon :icon="icon" />
     </template>
-    <template #title>
-      <h4>{{ title }}</h4>
-    </template>
+    <template #title
+      ><h4>{{ title }}</h4></template
+    >
     <template #content>
       <p>{{ description }}</p>
     </template>
-  </PrimeCard>
+  </AtomsBasecard>
 </template>
 
-<script setup>
-defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  icon: {
-    type: String,
-    required: true,
-  },
-});
+<script setup lang="ts">
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+}
+defineProps<Props>();
 </script>
