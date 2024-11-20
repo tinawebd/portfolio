@@ -1,5 +1,5 @@
 <template>
   <div>
-    <MoleculesMenuBar />
+    <OrganismsMenuBar />
   </div>
 </template>
