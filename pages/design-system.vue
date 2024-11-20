@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <h1 class="my-2 text-primary">Design System</h1>
+    <h4 class="my-2 flex justify-center text-primary">Design System</h4>
     <div class="card">
       <PrimeTabs value="0">
         <PrimeTabList>
@@ -11,12 +11,8 @@
         <PrimeTabPanels>
           <PrimeTabPanel value="0">
             <div class="flex gap-2">
-              <div class="flex flex-col gap-2 border border-gray-500 p-2">
-                <h2
-                  class="border-2 border-slate-400 bg-slate-200 p-2 text-slate-600"
-                >
-                  Typography
-                </h2>
+              <!-- Typography -->
+              <AtomsFieldset legend="Typography">
                 <div class="flex flex-col gap-2">
                   <h1>H1</h1>
                   <h2>H2</h2>
@@ -26,58 +22,152 @@
                   <h6>H6</h6>
                 </div>
                 <p>Paragraphe</p>
-              </div>
+              </AtomsFieldset>
 
               <!-- Buttons -->
-              <div class="flex flex-col gap-2 border border-gray-500 p-2">
-                <h2
-                  class="border-2 border-slate-400 bg-slate-200 p-2 text-slate-600"
-                >
-                  Buttons
-                </h2>
-                <AtomsButton label="Primary" severity="primary" />
-              </div>
+              <AtomsFieldset legend="Buttons">
+                <div class="flex flex-col gap-2">
+                  <h6>Large</h6>
+                  <div class="flex gap-2">
+                    <AtomsButton label="Primary" size="large" />
+                    <AtomsButton
+                      label="Secondary"
+                      severity="secondary"
+                      size="large"
+                    />
+                    <AtomsButton
+                      label="Success"
+                      severity="success"
+                      size="large"
+                    />
+                    <AtomsButton label="Info" severity="info" size="large" />
+                    <AtomsButton label="Warn" severity="warn" size="large" />
+                    <AtomsButton label="Help" severity="help" size="large" />
+                    <AtomsButton
+                      label="Danger"
+                      severity="danger"
+                      size="large"
+                    />
+                  </div>
+                  <PrimeDivider />
 
-              <div class="flex flex-col gap-2 border border-gray-500 p-2">
-                <h2
-                  class="border-2 border-slate-400 bg-slate-200 p-2 text-slate-600"
-                >
-                  SvgIcon
-                </h2>
+                  <h6>Normal</h6>
+                  <div class="flex gap-2">
+                    <AtomsButton label="Primary" />
+                    <AtomsButton label="Secondary" severity="secondary" />
+                    <AtomsButton label="Success" severity="success" />
+                    <AtomsButton label="Info" severity="info" />
+                    <AtomsButton label="Warn" severity="warn" />
+                    <AtomsButton label="Help" severity="help" />
+                    <AtomsButton label="Danger" severity="danger" />
+                  </div>
+                  <PrimeDivider />
+
+                  <h6>Small</h6>
+                  <div class="flex gap-2">
+                    <AtomsButton label="Primary" size="small" />
+                    <AtomsButton
+                      label="Secondary"
+                      severity="secondary"
+                      size="small"
+                    />
+                    <AtomsButton
+                      label="Success"
+                      severity="success"
+                      size="small"
+                    />
+                    <AtomsButton label="Info" severity="info" size="small" />
+                    <AtomsButton label="Warn" severity="warn" size="small" />
+                    <AtomsButton label="Help" severity="help" size="small" />
+                    <AtomsButton
+                      label="Danger"
+                      severity="danger"
+                      size="small"
+                    />
+                  </div>
+                  <PrimeDivider />
+
+                  <!-- outlined buttons -->
+                  <h6>Outlined</h6>
+                  <div class="flex gap-2">
+                    <AtomsButton
+                      label="Primary"
+                      variant="outlined"
+                      size="small"
+                    />
+                    <AtomsButton
+                      label="Secondary"
+                      severity="secondary"
+                      variant="outlined"
+                      size="small"
+                    />
+                    <AtomsButton
+                      label="Success"
+                      severity="success"
+                      variant="outlined"
+                    />
+                    <AtomsButton
+                      label="Info"
+                      severity="info"
+                      variant="outlined"
+                    />
+                    <AtomsButton
+                      label="Warn"
+                      severity="warn"
+                      variant="outlined"
+                    />
+                    <AtomsButton
+                      label="Help"
+                      severity="help"
+                      variant="outlined"
+                    />
+                    <AtomsButton
+                      label="Danger"
+                      severity="danger"
+                      variant="outlined"
+                    />
+                  </div>
+                  <PrimeDivider />
+
+                  <!-- link buttons -->
+                  <h6>Link</h6>
+                  <div class="flex gap-2">
+                    <AtomsButton label="Primary" variant="link" />
+                    <AtomsLinkButton
+                      label="External"
+                      href="https://vuejs.org/"
+                    />
+                    <AtomsRouterButton label="Router" to="/" />
+                  </div>
+                </div>
+              </AtomsFieldset>
+
+              <!-- Icons -->
+              <AtomsFieldset legend="Icons">
                 <div class="flex gap-2">
                   <AtomsSvgIcon :path="mdiLinkedin" />
                   <AtomsSvgIcon :path="mdiLaravel" />
                 </div>
-              </div>
+              </AtomsFieldset>
             </div>
           </PrimeTabPanel>
           <PrimeTabPanel value="1">
             <div class="flex gap-2">
-              <div class="flex flex-col gap-2 border border-gray-500 p-2">
-                <h2
-                  class="border-2 border-slate-400 bg-slate-200 p-2 text-slate-600"
-                >
-                  ServicesItemIcon
-                </h2>
+              <AtomsFieldset legend="ItemIcon">
                 <div class="group flex flex-col gap-2">
                   <MoleculesServicesItemIcon :icon="mdiLaravel" />
                 </div>
-              </div>
+              </AtomsFieldset>
             </div>
           </PrimeTabPanel>
           <PrimeTabPanel value="2">
-            <div class="flex flex-col gap-2 border border-gray-500 p-2">
-              <h2
-                class="border-2 border-slate-400 bg-slate-200 p-2 text-slate-600"
-              >
-                Technologies
-              </h2>
+            <AtomsFieldset legend="Technologies">
               <OrganismsTechnologie
                 :title="'Laravel'"
                 :description="'Laravel description'"
                 :icon="mdiLaravel"
               />
-            </div>
+            </AtomsFieldset>
           </PrimeTabPanel>
         </PrimeTabPanels>
       </PrimeTabs>
