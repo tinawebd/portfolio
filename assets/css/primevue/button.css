@@ -1,7 +1,7 @@
 @import './badge';
 
 .p-button {
-  @apply relative inline-flex cursor-pointer select-none items-center justify-center gap-2 overflow-hidden rounded-md border border-primary bg-primary px-3 py-2 text-primary-contrast transition-colors duration-200 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary enabled:hover:border-primary-emphasis enabled:hover:bg-primary-emphasis enabled:active:border-primary-emphasis-alt enabled:active:bg-primary-emphasis-alt disabled:cursor-default;
+  @apply relative inline-flex cursor-pointer select-none items-center justify-center gap-2 overflow-hidden border border-primary bg-primary px-3 py-2 text-primary-contrast transition-colors duration-200 focus-visible:outline focus-visible:outline-1 focus-visible:outline-offset-2 focus-visible:outline-primary enabled:hover:border-primary-emphasis enabled:hover:bg-primary-emphasis enabled:active:border-primary-emphasis-alt enabled:active:bg-primary-emphasis-alt disabled:cursor-default;
 }
 
 .p-button-icon-right {
@@ -173,5 +173,19 @@
 }
 
 .p-button-link:not(:disabled):hover .p-button-label {
-  @apply underline;
+  @apply no-underline;
+}
+
+.p-button-link::before {
+  @apply absolute left-0 top-0 h-[30px] w-[30px] border-l-2 border-t-2 border-primary transition-all duration-700 content-[''];
+}
+
+.p-button-link::after {
+  @apply absolute bottom-0 right-0 h-[30px] w-[30px] border-b-2 border-r-2 border-primary transition-all duration-700 content-[''];
+}
+.p-button-link:not(:disabled):hover::before {
+  @apply h-full w-full;
+}
+.p-button-link:not(:disabled):hover::after {
+  @apply h-full w-full;
 }
