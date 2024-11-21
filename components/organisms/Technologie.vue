@@ -1,11 +1,11 @@
 <template>
-  <AtomsBasecard class="group w-96" pt:header:class="p-4">
+  <AtomsBasecard class="group" pt:header:class="p-4">
     <template #header>
       <MoleculesServicesItemIcon :icon="icon" />
     </template>
-    <template #title
-      ><h4>{{ title }}</h4></template
-    >
+    <template #title>
+      <h4>{{ title }}</h4>
+    </template>
     <template #content>
       <p>{{ description }}</p>
     </template>
