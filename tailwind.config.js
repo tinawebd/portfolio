@@ -18,6 +18,10 @@ export default {
         'josefin-sans': ['Josefin Sans', 'sans-serif'],
         'funnel-display': ['Funnel Display', 'sans-serif'],
       },
+      backgroundImage: {
+        profile: "url('/img/profile.jpg')",
+        'team-hover': "url('/img/team-hover.png')",
+      },
     },
   },
 };

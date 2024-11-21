@@ -171,6 +171,14 @@
                   />
                 </div>
               </AtomsFieldset>
+              <AtomsFieldset legend="ProfileCard">
+                <div class="flex flex-col gap-2">
+                  <MoleculesProfileCard
+                    name="Tina Fetraniaina"
+                    content="Développeur Web PHP FullStack"
+                  />
+                </div>
+              </AtomsFieldset>
             </div>
           </PrimeTabPanel>
 
