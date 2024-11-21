@@ -1,5 +1,5 @@
 <template>
-  <AtomsBasecard
+  <AtomsCard
     class="group hover:bg-cover hover:bg-center hover:bg-no-repeat"
     :style="{ backgroundImage: isHovered ? `url(${coverImage})` : 'none' }"
     @mouseover="isHovered = true"
@@ -17,7 +17,7 @@
     <template #footer>
       <AtomsLinkButton :label="label" :href="href" />
     </template>
-  </AtomsBasecard>
+  </AtomsCard>
 </template>
 
 <script setup lang="ts">

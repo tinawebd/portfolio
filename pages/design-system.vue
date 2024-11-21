@@ -9,6 +9,7 @@
           <PrimeTab value="2">Organisms</PrimeTab>
         </PrimeTabList>
         <PrimeTabPanels>
+          <!-- Atoms -->
           <PrimeTabPanel value="0">
             <div class="flex gap-2">
               <!-- Typography -->
@@ -151,15 +152,29 @@
               </AtomsFieldset>
             </div>
           </PrimeTabPanel>
+
+          <!-- Molecules -->
           <PrimeTabPanel value="1">
             <div class="flex gap-2">
               <AtomsFieldset legend="ItemIcon">
-                <div class="group flex flex-col gap-2">
+                <div class="flex flex-col gap-2">
                   <MoleculesServicesItemIcon :icon="mdiLaravel" />
+                </div>
+              </AtomsFieldset>
+              <AtomsFieldset legend="RealisationCard">
+                <div class="flex flex-col gap-2">
+                  <MoleculesRealisationCard
+                    title="Laravel"
+                    subtitle="Laravel subtitle"
+                    description="Laravel description"
+                    href="#"
+                  />
                 </div>
               </AtomsFieldset>
             </div>
           </PrimeTabPanel>
+
+          <!-- Organisms -->
           <PrimeTabPanel value="2">
             <AtomsFieldset legend="Technologies">
               <OrganismsTechnologie

@@ -1,5 +1,5 @@
 <template>
-  <AtomsBasecard class="group" pt:header:class="p-4">
+  <AtomsCard class="group" pt:header:class="p-4">
     <template #header>
       <MoleculesServicesItemIcon :icon="icon" />
     </template>
@@ -9,7 +9,7 @@
     <template #content>
       <p>{{ description }}</p>
     </template>
-  </AtomsBasecard>
+  </AtomsCard>
 </template>
 
 <script setup lang="ts">
