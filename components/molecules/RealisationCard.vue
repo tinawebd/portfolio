@@ -1,7 +1,11 @@
 <template>
   <AtomsCard
     class="group hover:bg-cover hover:bg-center hover:bg-no-repeat"
-    :style="{ backgroundImage: isHovered ? `url(${coverImage})` : 'none' }"
+    :style="{
+      backgroundImage: isHovered
+        ? `linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(${coverImage})`
+        : 'none',
+    }"
     @mouseover="isHovered = true"
     @mouseleave="isHovered = false"
   >
@@ -12,7 +16,9 @@
       <span class="group-hover:text-primary-contrast">{{ subtitle }}</span>
     </template>
     <template #content>
-      <p class="group-hover:text-primary-contrast">{{ description }}</p>
+      <p class="line-clamp-2 group-hover:text-primary-contrast">
+        {{ description }}
+      </p>
     </template>
     <template #footer>
       <AtomsLinkButton :label="label" :href="href" />

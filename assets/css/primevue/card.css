@@ -7,7 +7,7 @@
 }
 
 .p-card-body {
-  @apply flex flex-col gap-2 p-5;
+  @apply flex flex-col gap-6 p-5;
 }
 
 .p-card-title {

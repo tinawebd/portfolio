@@ -13,6 +13,7 @@
           :description="slotProps.data.description"
           :cover-image="slotProps.data.image"
           :href="slotProps.data.href"
+          class="m-2 w-auto border border-surface-200 dark:border-surface-700"
         />
       </template>
     </PrimeCarousel>
@@ -26,7 +27,7 @@ const products = ref([
     name: 'Prixpromoteur',
     description:
       "L'agence immobilière spécialiste de l'immobilier neuf à prix direct promoteur.",
-    image: '/img/prixpromo.jpg',
+    image: '/img/prixpromo.webp',
     href: 'https://www.prixpromoteur.com/',
   },
   {
@@ -34,7 +35,7 @@ const products = ref([
     name: 'Toulouse Web',
     description:
       'Site web pour les annonces et les programmes pour les cinema à Toulouse',
-    image: '/img/toulouse.jpg',
+    image: '/img/toulouse.webp',
     href: 'https://www.toulouseweb.com/',
   },
   {
@@ -42,7 +43,7 @@ const products = ref([
     name: 'Canibest',
     description:
       "L'École des Chiens, éducateurs canins comportementalistes, éducation de chiot en douceur, à domicile, cours collectifs",
-    image: '/img/canibest.jpg',
+    image: '/img/canibest.webp',
     href: 'https://www.canibest.com/',
   },
   {
@@ -50,7 +51,7 @@ const products = ref([
     name: 'Formaric',
     description:
       'Application web pour accompagner les patients pour le traitement de son rhumatisme',
-    image: '/img/formaric.svg',
+    image: '/img/formaric.webp',
     href: 'https://formaric.observia.fr/',
   },
   {
@@ -58,7 +59,7 @@ const products = ref([
     name: 'Noa',
     description:
       'Application web pour mieux connaitre les patients en repondant les questionnaires via des formulaires',
-    image: '/img/abeeclic.jpg',
+    image: '/img/noa.webp',
     href: '#',
   },
   {
@@ -66,7 +67,7 @@ const products = ref([
     name: 'Portfolio',
     description:
       'Site web illustrant mes parcours professionnelles et mes compétences.',
-    image: '',
+    image: '/img/abeeclic.webp',
     href: '#',
   },
 ]);

@@ -11,6 +11,7 @@ declare module 'vue' {
     PrimeButton: typeof import('primevue/button')['default']
     Primecard: typeof import('primevue/card')['default']
     PrimeCard: typeof import('primevue/card')['default']
+    PrimeCarousel: typeof import('primevue/carousel')['default']
     PrimeDivider: typeof import('primevue/divider')['default']
     PrimeFieldset: typeof import('primevue/fieldset')['default']
     PrimeInputText: typeof import('primevue/inputtext')['default']
@@ -20,6 +21,7 @@ declare module 'vue' {
     PrimeTabPanel: typeof import('primevue/tabpanel')['default']
     PrimeTabPanels: typeof import('primevue/tabpanels')['default']
     PrimeTabs: typeof import('primevue/tabs')['default']
+    PrimeTag: typeof import('primevue/tag')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
