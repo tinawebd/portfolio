@@ -191,6 +191,9 @@
                 :icon="mdiLaravel"
               />
             </AtomsFieldset>
+            <AtomsFieldset legend="Carousel">
+              <OrganismsCarousel />
+            </AtomsFieldset>
           </PrimeTabPanel>
         </PrimeTabPanels>
       </PrimeTabs>

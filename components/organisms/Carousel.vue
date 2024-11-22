@@ -7,14 +7,16 @@
       :responsive-options="responsiveOptions"
     >
       <template #item="slotProps">
-        <MoleculesRealisationCard
-          :title="slotProps.data.name"
-          :subtitle="slotProps.data.code"
-          :description="slotProps.data.description"
-          :cover-image="slotProps.data.image"
-          :href="slotProps.data.href"
-          class="m-2 w-auto border border-surface-200 dark:border-surface-700"
-        />
+        <slot name="item-template">
+          <MoleculesRealisationCard
+            :title="slotProps.data.name"
+            :subtitle="slotProps.data.code"
+            :description="slotProps.data.description"
+            :cover-image="slotProps.data.image"
+            :href="slotProps.data.href"
+            class="m-2 w-auto border border-surface-200 dark:border-surface-700"
+          />
+        </slot>
       </template>
     </PrimeCarousel>
   </div>
