@@ -5,6 +5,14 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@primevue/nuxt-module', '@nuxt/eslint'],
   css: ['@/assets/css/tailwind.css', '@/assets/css/base.css'],
 
+  app: {
+    head: {
+      htmlAttrs: {
+        class: 'app-dark',
+      },
+    },
+  },
+
   primevue: {
     components: {
       prefix: 'Prime',
