@@ -1,9 +1,7 @@
 <template>
   <PrimeMenubar :model="items" class="mx-auto max-w-screen-xl px-14">
     <template #start>
-      <NuxtLink to="/">
-        <span class="text-2xl font-bold text-primary">Logo</span>
-      </NuxtLink>
+      <AtomsLogo to="/" />
     </template>
     <template #item="{ item }">
       <AtomsMenuBarItem :to="item.route" :label="item.label" />
