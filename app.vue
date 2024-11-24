@@ -2,6 +2,7 @@
   <div>
     <OrganismsHeader v-if="showHeader" />
     <NuxtPage />
+    <OrganismsFooter />
   </div>
 </template>
 <script setup lang="ts">
