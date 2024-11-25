@@ -27,10 +27,9 @@
 </template>
 
 <script setup lang="ts">
-interface Props {
-  title: string;
-  subtitle: string;
-  description: string;
+import type { CardProps } from '@/components/atoms/Card.vue';
+
+interface Props extends CardProps {
   href: string;
   label?: string;
   coverImage?: string;
