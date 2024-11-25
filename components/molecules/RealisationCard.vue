@@ -29,12 +29,12 @@
 <script setup lang="ts">
 import type { CardProps } from '@/components/atoms/Card.vue';
 
-interface Props extends CardProps {
+export interface RealisationCardProps extends CardProps {
   href: string;
   label?: string;
   coverImage?: string;
 }
-withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<RealisationCardProps>(), {
   label: 'voir plus',
   coverImage: 'https://themewagon.github.io/videograph/img/blog/blog-2.jpg',
 });
