@@ -7,25 +7,15 @@
       <AtomsMenuBarItem :to="item.route" :label="item.label" />
     </template>
     <template #end>
-      <div class="flex items-center gap-2">
-        <MoleculesMenuEnd />
-      </div>
+      <MoleculesSocialNetworks />
     </template>
   </PrimeMenubar>
 </template>
 
 <script setup>
-import { MoleculesMenuEnd } from '#components';
-import { ref } from 'vue';
-
 const items = ref([
   {
-    label: 'Home',
-    icon: 'pi pi-home',
-    route: '/',
-  },
-  {
-    label: 'Realisations',
+    label: 'Services',
     icon: 'pi pi-star',
     route: '/realisations',
   },
