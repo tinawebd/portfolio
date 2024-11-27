@@ -1,16 +1,13 @@
 <template>
   <AtomsButton
     as="a"
-    :label="label"
-    :href="href"
     target="_blank"
     rel="noopener"
     variant="link"
-    size="large"
+    v-bind="$props"
   />
 </template>
-
-<script lang="ts" setup>
+<script setup lang="ts">
 defineProps<{
   label: string;
   href: string;

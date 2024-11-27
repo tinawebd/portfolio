@@ -1,10 +1,7 @@
 <template>
-  <PrimeButton
-    :label="label"
-    :severity="severity"
-    :variant="variant"
-    :size="size"
-  />
+  <PrimeButton :severity="severity" :variant="variant" :size="size">
+    {{ label }}
+  </PrimeButton>
 </template>
 <script setup lang="ts">
 export type Severity =
@@ -23,10 +20,12 @@ interface Props {
   severity?: Severity;
   variant?: Variant;
   size?: Size;
+  svgIcon?: string;
 }
 withDefaults(defineProps<Props>(), {
   severity: undefined,
   variant: undefined,
   size: undefined,
+  svgIcon: undefined,
 });
 </script>
