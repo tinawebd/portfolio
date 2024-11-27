@@ -5,8 +5,8 @@
 <script setup lang="ts">
 // @ts-expect-error: SvgIcon is not a module
 import SvgIcon from '@jamescoyle/vue-icon';
-
-defineProps<{
+export interface SvgIconProps {
   path: string;
-}>();
+}
+defineProps<SvgIconProps>();
 </script>
