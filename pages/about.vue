@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
   <div>
-    <h1>Hello Contact</h1>
+    <h1>Hello About</h1>
   </div>
 </template>

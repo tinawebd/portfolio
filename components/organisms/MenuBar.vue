@@ -16,13 +16,11 @@
 const items = ref([
   {
     label: 'Services',
-    icon: 'pi pi-star',
-    route: '/realisations',
+    route: '/services',
   },
   {
-    label: 'Contact',
-    icon: 'pi pi-envelope',
-    route: '/contact',
+    label: 'à propos',
+    route: '/about',
   },
 ]);
 </script>
