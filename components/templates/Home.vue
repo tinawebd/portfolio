@@ -44,12 +44,6 @@
       <h4 class="my-4 text-surface-50">Projets</h4>
       <OrganismsRealisationsCarousel :realisations="realisations" />
     </section>
-    <OrganismsSectionCard
-      title="Réseaux et Contacts"
-      subtitle="Contactez-moi & Explorez Mon Travail"
-    >
-      <template #content><OrganismsContact /></template>
-    </OrganismsSectionCard>
   </div>
 </template>
 <script setup lang="ts">

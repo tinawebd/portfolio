@@ -14,12 +14,6 @@
         ><AtomsTextDescription :description="description"
       /></template>
     </OrganismsSectionCard>
-    <OrganismsSectionCard
-      title="Réseaux et Contacts"
-      subtitle="Contactez-moi & Explorez Mon Travail"
-    >
-      <template #content><OrganismsContact /></template>
-    </OrganismsSectionCard>
   </div>
 </template>
 
