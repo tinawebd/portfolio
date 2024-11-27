@@ -1,10 +1,13 @@
 <template>
-  <NuxtLink :to="to"><AtomsSvgIcon :path="icon" /></NuxtLink>
+  <NuxtLink :to="to" class="flex items-center gap-2">
+    <AtomsSvgIcon :path="icon" /><slot name="label"></slot
+  ></NuxtLink>
 </template>
 <script setup lang="ts">
-interface LinkIconProps {
+export interface LinkIconProps {
   to: string;
   icon: string;
+  label: string;
 }
 defineProps<LinkIconProps>();
 </script>
