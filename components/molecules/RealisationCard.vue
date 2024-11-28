@@ -13,10 +13,10 @@
       <h4 class="group-hover:text-primary">{{ title }}</h4>
     </template>
     <template #subtitle>
-      <span class="group-hover:text-primary-contrast">{{ subtitle }}</span>
+      <span>{{ subtitle }}</span>
     </template>
     <template #content>
-      <p class="line-clamp-2 group-hover:text-primary-contrast">
+      <p class="line-clamp-2">
         {{ description }}
       </p>
     </template>
