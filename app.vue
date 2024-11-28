@@ -1,7 +1,9 @@
 <template>
   <div>
     <OrganismsHeader v-if="showHeader" />
-    <NuxtPage />
+    <div class="mx-auto max-w-screen-xl py-8">
+      <NuxtPage />
+    </div>
     <OrganismsSectionBottom :icons="icons" />
     <OrganismsFooter />
   </div>

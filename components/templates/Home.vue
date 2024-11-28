@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-screen-xl py-8">
+  <div>
     <section class="flex items-center justify-around">
       <MoleculesProfileCard
         :name="profile.name"

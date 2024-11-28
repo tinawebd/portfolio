@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-screen-xl py-8">
+  <div>
     <OrganismsSectionCard
       title="à propos de moi"
       subtitle="qui suis-je ?"
