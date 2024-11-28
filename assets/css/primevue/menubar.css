@@ -44,7 +44,7 @@
 }
 
 .p-menubar-item.p-focus > .p-menubar-item-content {
-  @apply bg-surface-100 text-surface-800 dark:bg-surface-800 dark:text-surface-0;
+  @apply text-surface-800 dark:text-surface-0;
 }
 
 .p-menubar-item.p-focus > .p-menubar-item-content .p-menubar-item-icon {
@@ -56,7 +56,7 @@
 }
 
 .p-menubar-item:not(.p-disabled) > .p-menubar-item-content:hover {
-  @apply text-surface-800 dark:bg-surface-800 dark:text-surface-0;
+  @apply text-surface-800 dark:text-surface-0;
 }
 
 .p-menubar-item:not(.p-disabled)
@@ -72,7 +72,7 @@
 }
 
 .p-menubar-item-active > .p-menubar-item-content {
-  @apply bg-surface-100 text-surface-800 dark:bg-surface-800 dark:text-surface-0;
+  @apply text-surface-800 dark:text-surface-0;
 }
 
 .p-menubar-item-active > .p-menubar-item-content .p-menubar-item-icon {
