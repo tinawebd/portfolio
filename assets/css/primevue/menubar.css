@@ -34,6 +34,9 @@
 .p-menubar-item-link {
   @apply /* custom css */ relative flex cursor-pointer select-none items-center gap-2 overflow-hidden py-1 uppercase text-inherit no-underline outline-none after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:scale-0 after:bg-primary after:transition-all after:duration-300 after:content-[''] hover:after:absolute hover:after:bottom-0 hover:after:left-0 hover:after:h-0.5 hover:after:w-full hover:after:scale-100 hover:after:bg-primary hover:after:content-[''];
 }
+.router-link-active.p-menubar-item-link::after {
+  @apply scale-100 bg-primary;
+}
 
 .p-menubar-item-icon {
   @apply text-surface-400 dark:text-surface-500;
