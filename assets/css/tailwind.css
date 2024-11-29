@@ -8,7 +8,7 @@
     @apply bg-surface-950 font-josefin-sans font-normal;
   }
   h1 {
-    @apply text-6xl font-bold;
+    @apply text-4xl font-bold;
   }
   h2 {
     @apply text-5xl font-semibold;
