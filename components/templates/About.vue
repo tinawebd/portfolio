@@ -1,25 +1,22 @@
 <template>
   <div>
+    <h1 class="text-surface-200">En Coulisses : Qui Suis-Je ?</h1>
     <OrganismsSectionCard
-      title="à propos de moi"
-      subtitle="qui suis-je ?"
-      class="border-t-0"
+      v-for="(item, i) in items"
+      :key="i"
+      :title="item.title"
+      :subtitle="item.subtitle"
     >
-      <template #content
-        ><AtomsTextDescription :description="description"
-      /></template>
-    </OrganismsSectionCard>
-    <OrganismsSectionCard title="Mode de travail" subtitle="Indépendant">
-      <template #content
-        ><AtomsTextDescription :description="description"
-      /></template>
+      <template #content>
+        <AtomsTextDescription :description="item.description || ''" />
+      </template>
     </OrganismsSectionCard>
   </div>
 </template>
 
 <script lang="ts" setup>
+import type { CardProps } from '../atoms/Card.vue';
 defineProps<{
-  title: string;
-  description: string;
+  items: CardProps[];
 }>();
 </script>
