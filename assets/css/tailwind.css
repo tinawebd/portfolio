@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply bg-surface-950 font-josefin-sans font-normal;
+    @apply bg-surface-950 font-funnel-display font-normal;
   }
   h1 {
     @apply text-4xl font-bold;
