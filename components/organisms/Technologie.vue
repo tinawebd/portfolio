@@ -1,5 +1,12 @@
 <template>
-  <AtomsCard class="group" pt:header:class="p-4">
+  <AtomsCard
+    v-animateonscroll="{
+      enterClass: 'animate-flipup',
+      leaveClass: 'animate-fadeout',
+    }"
+    class="group animate-duration-1000 animate-ease-in-out"
+    pt:header:class="p-4"
+  >
     <template #header>
       <MoleculesServicesItemIcon :icon="icon" />
     </template>

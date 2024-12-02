@@ -5,6 +5,7 @@
     :num-visible="numVisible"
     :num-scroll="numScroll"
     :orientation="orientation"
+    :show-navigators="false"
   >
     <template #item="slotProps">
       <slot name="item-template" :item="slotProps.data"></slot>
