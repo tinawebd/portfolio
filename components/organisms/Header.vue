@@ -1,5 +1,3 @@
 <template>
-  <div>
-    <OrganismsMenuBar />
-  </div>
+  <OrganismsMenuBar />
 </template>

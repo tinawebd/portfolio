@@ -1,10 +1,8 @@
 <template>
   <div>
-    <section class="flex items-center justify-around">
-      <MoleculesProfileCard
-        :name="profile.name"
-        :content="profile.profession"
-      />
+    <section
+      class="-mt-[90px] flex min-h-screen items-center justify-end bg-home-header bg-cover bg-fixed bg-center bg-no-repeat px-4"
+    >
       <OrganismsVerticalCarousel
         :value="intros"
         circular
@@ -24,8 +22,21 @@
           </AtomsCard>
         </template>
       </OrganismsVerticalCarousel>
+      <div class="flex w-1/2 flex-col gap-4">
+        <p class="text-2xl text-primary">Bonjour, je suis</p>
+        <p class="text-6xl text-primary-50">Tina Fetraniaina</p>
+        <h1 class="text-center text-base text-surface-400">
+          Développeur Web PHP Laravel et VueJS
+        </h1>
+      </div>
+      <MoleculesProfileCard
+        :name="profile.name"
+        :content="profile.profession"
+      />
     </section>
-    <section class="my-8 border-t-2 border-surface-200 dark:border-surface-900">
+    <section
+      class="my-8 mt-0 border-t-2 border-surface-200 dark:border-surface-900"
+    >
       <h6 class="my-4 text-primary">Compétences</h6>
       <h4 class="my-4 text-surface-50">Technologies</h4>
       <div class="flex justify-center gap-4">
@@ -39,7 +50,9 @@
         />
       </div>
     </section>
-    <section class="my-8 border-t-2 border-surface-200 dark:border-surface-900">
+    <section
+      class="my-8 border-t-2 border-surface-200 bg-home-bottom bg-cover bg-fixed px-2 dark:border-surface-900"
+    >
       <h6 class="my-4 text-primary">Réalisations</h6>
       <h4 class="my-4 text-surface-50">Projets</h4>
       <OrganismsRealisationsCarousel :realisations="realisations" />
