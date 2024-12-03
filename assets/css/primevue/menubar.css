@@ -111,7 +111,7 @@
 }
 
 .p-menubar-mobile {
-  @apply relative justify-between;
+  @apply absolute justify-between;
 }
 
 .p-menubar-mobile .p-menubar-button {

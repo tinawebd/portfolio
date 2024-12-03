@@ -9,7 +9,7 @@
       class="border-t-0"
     >
       <template #content>
-        <div class="flex justify-center gap-6">
+        <div class="flex flex-col justify-center gap-6 sm:flex-row">
           <AtomsListService
             v-for="(service, i) in services"
             :key="i"
