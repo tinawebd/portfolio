@@ -1,14 +1,14 @@
 <template>
   <div>
     <section
-      class="-mx-4 -mt-[90px] flex min-h-screen items-center justify-end bg-home-header bg-cover bg-fixed bg-center bg-no-repeat"
+      class="-mx-4 -mt-[90px] flex min-h-screen items-center justify-end bg-home-header bg-cover bg-fixed bg-center bg-no-repeat 2xl:mx-0"
     >
       <OrganismsVerticalCarousel
         :value="intros"
         circular
         :autoplay-interval="5000"
         :show-navigators="false"
-        class="hidden md:block"
+        class="hidden xl:block"
       >
         <template #item-vertical-template="{ item }">
           <AtomsCard
@@ -52,13 +52,13 @@
         />
       </div>
     </section>
-    <!-- <section
-      class="my-8 border-t-2 border-surface-200 bg-home-bottom bg-cover bg-fixed px-2 dark:border-surface-900"
+    <section
+      class="-mx-4 my-8 border-t-2 border-surface-200 bg-home-bottom bg-cover bg-fixed px-2 2xl:mx-0 dark:border-surface-900"
     >
       <h6 class="my-4 text-primary">Réalisations</h6>
       <h4 class="my-4 text-surface-50">Projets</h4>
       <OrganismsRealisationsCarousel :realisations="realisations" />
-    </section> -->
+    </section>
   </div>
 </template>
 <script setup lang="ts">

@@ -1,6 +1,5 @@
 <template>
   <PrimeCarousel
-    container-class="flex items-center"
     :value="value"
     :num-visible="numVisible"
     :num-scroll="numScroll"
