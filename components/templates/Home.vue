@@ -1,7 +1,7 @@
 <template>
   <div>
     <section
-      class="-mt-[90px] flex min-h-screen items-center justify-end bg-home-header bg-cover bg-fixed bg-center bg-no-repeat px-4"
+      class="-mx-4 -mt-[90px] flex min-h-screen items-center justify-end bg-home-header bg-cover bg-fixed bg-center bg-no-repeat"
     >
       <OrganismsVerticalCarousel
         :value="intros"
@@ -52,13 +52,13 @@
         />
       </div>
     </section>
-    <section
+    <!-- <section
       class="my-8 border-t-2 border-surface-200 bg-home-bottom bg-cover bg-fixed px-2 dark:border-surface-900"
     >
       <h6 class="my-4 text-primary">Réalisations</h6>
       <h4 class="my-4 text-surface-50">Projets</h4>
       <OrganismsRealisationsCarousel :realisations="realisations" />
-    </section>
+    </section> -->
   </div>
 </template>
 <script setup lang="ts">
