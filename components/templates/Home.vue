@@ -8,6 +8,7 @@
         circular
         :autoplay-interval="5000"
         :show-navigators="false"
+        class="hidden md:block"
       >
         <template #item-vertical-template="{ item }">
           <AtomsCard
@@ -22,7 +23,7 @@
           </AtomsCard>
         </template>
       </OrganismsVerticalCarousel>
-      <div class="flex w-1/2 flex-col gap-4">
+      <div class="z-20 flex w-1/2 flex-col gap-4">
         <p class="text-2xl text-primary">Bonjour, je suis</p>
         <p class="text-6xl text-primary-50">Tina Fetraniaina</p>
         <h1 class="text-center text-base text-surface-400">
@@ -32,6 +33,7 @@
       <MoleculesProfileCard
         :name="profile.name"
         :content="profile.profession"
+        class="z-10"
       />
     </section>
     <section
@@ -39,7 +41,7 @@
     >
       <h6 class="my-4 text-primary">Compétences</h6>
       <h4 class="my-4 text-surface-50">Technologies</h4>
-      <div class="flex justify-center gap-4">
+      <div class="flex flex-col justify-center gap-4 md:flex-row">
         <OrganismsTechnologie
           v-for="(technologie, i) in technologies"
           :key="i"
