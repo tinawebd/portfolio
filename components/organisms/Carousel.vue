@@ -1,11 +1,8 @@
 <template>
   <PrimeCarousel
-    :value="value"
-    :num-visible="numVisible"
-    :num-scroll="numScroll"
-    :orientation="orientation"
     :show-navigators="false"
-    :responsive-options="responsiveOptions"
+    :responsive-options="isResponsive ? responsiveOptions : undefined"
+    v-bind="$props"
   >
     <template #item="slotProps">
       <slot name="item-template" :item="slotProps.data"></slot>
@@ -17,25 +14,25 @@
 export type Orientation = 'horizontal' | 'vertical';
 export interface CarouselProps {
   value: Array<object>;
+  isResponsive?: boolean;
   numVisible?: number;
-  numScroll?: number;
   orientation?: Orientation;
 }
 withDefaults(defineProps<CarouselProps>(), {
   orientation: 'horizontal',
-  numScroll: 1,
-  numVisible: 3,
+  numVisible: 1,
+  isResponsive: true,
 });
 
 const responsiveOptions = ref([
   {
-    breakpoint: '1400px',
-    numVisible: 2,
+    breakpoint: '9000px',
+    numVisible: 3,
     numScroll: 1,
   },
   {
     breakpoint: '1199px',
-    numVisible: 3,
+    numVisible: 2,
     numScroll: 1,
   },
   {
