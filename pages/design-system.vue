@@ -192,7 +192,29 @@
               />
             </AtomsFieldset>
             <AtomsFieldset legend="Carousel">
-              <OrganismsCarousel />
+              <div class="flex flex-col gap-4">
+                <OrganismsRealisationsCarousel :realisations="realisations" />
+              </div>
+            </AtomsFieldset>
+            <AtomsFieldset legend="ContactForm">
+              <OrganismsVerticalCarousel
+                :value="realisations"
+                circular
+                :autoplay-interval="3000"
+              >
+                <template #item-vertical-template="{ item }">
+                  <AtomsCard
+                    class="m-2 w-96 border border-surface-200 dark:border-surface-700"
+                  >
+                    <template #title
+                      ><h4>{{ item.title }}</h4></template
+                    >
+                    <template #subtitle
+                      ><h6>{{ item.subtitle }}</h6></template
+                    >
+                  </AtomsCard>
+                </template>
+              </OrganismsVerticalCarousel>
             </AtomsFieldset>
           </PrimeTabPanel>
         </PrimeTabPanels>
@@ -206,4 +228,55 @@ import { mdiLinkedin, mdiLaravel } from '@mdi/js';
 definePageMeta({
   showHeader: false,
 });
+
+const realisations = ref([
+  {
+    subtitle: 'Symfony, Bootstrap, Jquery',
+    title: 'Prixpromoteur',
+    description:
+      "L'agence immobilière spécialiste de l'immobilier neuf à prix direct promoteur.",
+    coverImage: '/img/prixpromo.webp',
+    href: 'https://www.prixpromoteur.com/',
+  },
+  {
+    subtitle: 'Wordpress, Bootstrap',
+    title: 'Toulouse Web',
+    description:
+      'Site web pour les annonces et les programmes pour les cinema à Toulouse',
+    coverImage: '/img/toulouse.jpg',
+    href: 'https://www.toulouseweb.com/',
+  },
+  {
+    subtitle: 'Wordpress',
+    title: 'Canibest',
+    description:
+      "L'École des Chiens, éducateurs canins comportementalistes, éducation de chiot en douceur, à domicile, cours collectifs",
+    coverImage: '/img/canibest.jpg',
+    href: 'https://www.canibest.com/',
+  },
+  {
+    subtitle: 'Laravel, Vuejs, Bootstrap',
+    title: 'Formaric',
+    description:
+      'Application web pour accompagner les patients pour le traitement de son rhumatisme',
+    coverImage: '/img/formaric.png',
+    href: 'https://formaric.observia.fr/',
+  },
+  {
+    subtitle: 'Laravel, Vuejs, Tailwind',
+    title: 'Noa',
+    description:
+      'Application web pour mieux connaitre les patients en repondant les questionnaires via des formulaires',
+    coverImage: '/img/noa.webp',
+    href: '#',
+  },
+  {
+    subtitle: 'Laravel, Vuejs, Tailwind',
+    title: 'Portfolio',
+    description:
+      'Site web illustrant mes parcours professionnelles et mes compétences.',
+    coverImage: '/img/abeeclic.webp',
+    href: '#',
+  },
+]);
 </script>
