@@ -87,15 +87,15 @@ const realisations = ref([
     description:
       'Application web pour mieux connaitre les patients en repondant les questionnaires via des formulaires',
     coverImage: '/img/noa.webp',
-    href: '#',
+    href: 'https://recette-noa.observia.fr/',
   },
   {
-    subtitle: 'Laravel, Vuejs, Tailwind',
-    title: 'Portfolio',
+    subtitle: 'Laravel, AngularJS, Ionic',
+    title: 'Abeeclic',
     description:
-      'Site web illustrant mes parcours professionnelles et mes compétences.',
-    coverImage: '/img/abeeclic.webp',
-    href: '#',
+      "Abeeclic est une application mobile permettant d'acheter et de vendre des vêtements.",
+    coverImage: '/img/abeeclic.jpg',
+    href: '',
   },
 ]);
 </script>

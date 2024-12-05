@@ -21,7 +21,7 @@
       </p>
     </template>
     <template #footer>
-      <AtomsLinkButton :label="label" :href="href" />
+      <AtomsLinkButton v-show="href !== ''" :label="label" :href="href" />
     </template>
   </AtomsCard>
 </template>
