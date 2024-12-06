@@ -1,8 +1,8 @@
 <template>
   <footer
-    class="flex items-center justify-center gap-4 bg-surface-900 p-4 text-surface-200"
+    class="flex items-center justify-center gap-4 bg-surface-900 py-10 text-surface-200"
   >
-    <p>
+    <p class="text-center text-sm lg:text-base">
       Conçu avec Nuxt/VueJS et Tailwind CSS | Intégration et développement -
       Tina
     </p>
