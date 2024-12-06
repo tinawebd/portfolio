@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center gap-8 xl:flex-row">
+  <div class="flex flex-col items-center gap-8 md:flex-row">
     <AtomsLinkIcon
       v-for="(item, i) in icons"
       :key="i"

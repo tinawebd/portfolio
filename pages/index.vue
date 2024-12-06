@@ -9,8 +9,8 @@
 <script setup>
 import { mdiLaravel, mdiVuejs, mdiWordpress } from '@mdi/js';
 const profile = ref({
-  name: 'John Doe',
-  profession: 'Full Stack Developer',
+  name: 'Tina Fetraniaina',
+  profession: 'Développeur Web Full Stack',
 });
 const intros = ref([
   {
