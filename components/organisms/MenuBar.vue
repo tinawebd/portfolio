@@ -36,7 +36,7 @@ const icons = ref([
     label: 'Email',
   },
   {
-    to: 'https://github.com/TinaFetraniaina',
+    to: 'https://github.com/tinawebd/portfolio',
     icon: mdiGithub,
     label: 'Github',
   },

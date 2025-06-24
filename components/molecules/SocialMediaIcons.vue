@@ -6,6 +6,7 @@
       :to="item.to"
       :icon="item.icon"
       :label="item.label"
+      target="_blank"
     />
   </div>
 </template>

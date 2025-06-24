@@ -6,6 +6,7 @@
       :to="item.to"
       :icon="item.icon"
       :label="item.label"
+      target="_blank"
       v-bind="$attrs"
     >
       <template #label>{{ item.label }}</template>

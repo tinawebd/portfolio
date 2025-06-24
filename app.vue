@@ -28,7 +28,7 @@ const icons = ref([
   },
   {
     icon: mdiGithub,
-    to: 'https://github.com/TinaFetraniaina',
+    to: 'https://github.com/tinawebd/portfolio',
     label: 'Github',
   },
 ]);
